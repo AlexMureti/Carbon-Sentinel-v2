@@ -204,6 +204,7 @@ export default function MapView({ onLocationSelect, selectedLocation }) {
       </button>
 
       {/* Map Container */}
+    <div className="map-container">
       <MapContainer
         center={defaultCenter}
         zoom={7}
@@ -272,6 +273,7 @@ export default function MapView({ onLocationSelect, selectedLocation }) {
           </Marker>
         )}
       </MapContainer>
+    </div>
 
       {loading && (
         <div className="absolute inset-0 z-[1001] flex items-center justify-center bg-white bg-opacity-75">
